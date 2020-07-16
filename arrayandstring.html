@@ -1,0 +1,54 @@
+<html>
+    <head> <title> array and string methods::</title></head>
+        <body>
+           <h1>String and array methods</h1>
+            <script>
+            let str="hello world";
+            console.log("String methods in below:::");
+            var pos=str.search("world");
+            console.log("search method::"+pos);
+
+            let str1="hello world";
+            var pos1=str1.slice(2,3);
+            console.log("slice method::"+pos1);
+
+            let str2="hello world";
+            var pos2=str2.substring(2,3);
+            console.log("substring method::"+pos2);
+
+            let str3="hello world";
+            var pos3=str3.substr(2,7);
+            console.log("substr method::"+pos3);
+
+            let str4="hello world";
+            var pos4=str4.replace("hello","good morning");
+            console.log("replace method::"+pos4);
+
+            let str5="  hello world  ";
+            var pos5=str5.trim();
+            console.log("trim method::"+pos5);
+
+
+            var website=["google", "amazon" , "flipkard" , "greek to greek" , "javatpoint"]
+            console.log("Array methods in below :::");
+            var p=website.toString();
+            console.log("tostring method::"+p);
+
+            var website1=["google", "amazon" , "flipkard" , "greek to greek" , "javatpoint"]
+            var p1=website1.slice(0,4);
+            console.log("slice method::"+p1);
+
+            var website2=["google", "amazon" , "flipkard" , "greek to greek" , "javatpoint"]
+            var p2=website2.concat("tutorialpoint");
+            console.log("concate method::"+p2);
+
+            var website3=["google", "amazon" , "flipkard" , "greek to greek" , "javatpoint"]
+            var p3=delete website[5];
+            console.log("delete method:: "+p3+" show the array: "+website);
+
+            var website4=["google", "amazon" , "flipkard" , "greek to greek" , "javatpoint"]
+            var p4=website4.shift()
+            console.log("shift method::"+p4+" show the array: "+website);
+            </script>
+        </body>
+    </html>
